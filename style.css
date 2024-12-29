@@ -546,10 +546,10 @@ footer{
    }
 
    .card a {
-      display: block; 
-      text-align: center; 
-      margin: 0 auto; 
-      width: fit-content; 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     margin: 0 auto; 
   }
 
    .service-cards .card a {

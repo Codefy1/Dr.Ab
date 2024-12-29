@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <title>Dr. Ab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images" href="images/logoMed.svg">
+    <script src="https://kit.fontawesome.com/d4cd63c4fb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+
+          <!--responsive-->
+
+          <div class="menu1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+
+
+        <div class="container">
+            <div class="logo">
+                <p>Dr. Ab</p>
+            </div>
+    
+            <ul class="menu">
+                <li><a href="#home">Acceuil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#services">Nos Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <h2>Bienvenue chez Dr. Ab</h2>
+            <p>Votre santé est notre priorité. Prenez rendez-vous dès aujourd'hui !</p>
+            <a href="#contact" class="btn">Prendre Rendez-vous</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>À Propos</h2>
+        <p>
+            Dr. Ab, spécialisé en endocrinologie, est dédié à fournir des soins de qualité aux patients souffrant de troubles hormonaux. 
+            Fort de nombreuses années d'expérience, Dr. Ab traite diverses conditions liées au système endocrinien, notamment le diabète, 
+            les troubles de la thyroïde, les déséquilibres hormonaux et les maladies des glandes surrénales. 
+            Son approche repose sur un diagnostic précis, des traitements personnalisés et un accompagnement continu 
+            pour améliorer la qualité de vie de ses patients. En tant qu'expert dans son domaine, Dr. Ab est déterminé 
+            à rester à la pointe des avancées médicales pour offrir les meilleurs soins possibles.
+        </p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h3>Traitement du Diabète</h3>
+                <p>Gestion et suivi personnalisé des patients atteints de diabète de type 1 et de type 2.</p>
+                <a href="#">Lire Plus</a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h3>Traitement de la Thyroïde</h3>
+                <p>Diagnostic et traitement des troubles thyroïdiens tels que l'hyperthyroïdie et l'hypothyroïdie.</p>
+                <a href="#">Lire Plus</a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h3>Équilibre Hormonal</h3>
+                <p>Prise en charge des déséquilibres hormonaux, notamment liés à la ménopause ou à l'andropause.</p>
+                <a href="#">Lire Plus</a>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h3>Problèmes des Glandes Surrénales</h3>
+                <p>Soins pour les maladies des glandes surrénales, y compris le syndrome de Cushing et la maladie d'Addison.</p>
+                <a href="#">Lire Plus</a>
+            </div>
+        </div>
+    </section>
+
+     <!--section contact-->
+
+     <section id="contact">
+        <h2 class="section_title">Contact</h2>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre Adresse</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212752.9693468606!2d-7.751808960877732!3d33.57246436787463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca!5e0!3m2!1sfr!2sma!4v1735127203349!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Adresse Mail" required>
+                    <input type="text" placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>Copyright 2024. Cabinet du Dr. Ab. Tous droits réservés.</p>
+    </footer>
+
+
+
+
+    <script>  
+        const menu1 = document.querySelector('.menu1');
+        const menu = document.querySelector('.menu');
+
+
+        menu1.addEventListener ('click', () => {
+        menu.classList.toggle('responsive'); 
+        });
+    </script>
+
+ 
+</body>
+</html>

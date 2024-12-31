@@ -501,7 +501,7 @@ footer{
 
 /*Responsive*/
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 960px) {
    header {
       justify-content: center;
       padding-top: 30px;
@@ -554,7 +554,8 @@ footer{
   }
 
    .service-cards .card a {
-      margin-left: 168px;
+      margin-left: auto;
+      margin-right: auto;
    }
 
    #contact {
